@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
 </head>
 <body>  
     <header>
-        <h1>Weather Dashboard</h1>
+        <h1 class="title">Weather Dashboard</h1>
     </header>
     <main>
-        Hi some code about weather.
-        
+        <section class ="selectedCity">
+            <h1 id = "cityName">Some City and date</h1>
+            <ul id = "cityInfo">
+
+            </ul>
+        </section>
+        <section class="foreCast">
+            <h3>5-Day Forecast:</h3>
+            <div id="modal"></div>
+        </section>
     </main>
+    <aside>
+        <h1>
+            Search for a city:
+        </h1>
+        <input class="cityName" type="text" placeholder="City Name">
+        <br>
+        <button class="searchBtn">Search</button>
+        <hr>
+        <section class="cityList">
+            yadaa ydaa
+        </section>
+    </aside>
 
     <footer>
-        <h3>
-            Thank you for the code !.
-        </h3>
+       <a href="https://github.com/vinitp2" target="_blank">Github</a>
+       <a href="https://www.linkedin.com/in/vinit-patell" target="_blank">LinkedIn</a>
     </footer>
     <script src="./Assets/script.js"></script>
 </body>
