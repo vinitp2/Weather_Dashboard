@@ -11,18 +11,6 @@
     <header>
         <h1 class="title">Weather Dashboard</h1>
     </header>
-    <main>
-        <section class ="selectedCity">
-            <h1 id = "cityName">Some City and date</h1>
-            <ul id = "cityInfo">
-
-            </ul>
-        </section>
-        <section class="foreCast">
-            <h3>5-Day Forecast:</h3>
-            <div id="modal"></div>
-        </section>
-    </main>
     <aside>
         <h1>
             Search for a city:
@@ -32,14 +20,31 @@
         <button class="searchBtn">Search</button>
         <hr>
         <section class="cityList">
-            yadaa ydaa
+           This is where the city list will go !
         </section>
     </aside>
+    <main>
+        <section class ="selectedCity">
+            <h1><span id = "cityH1"></span><img id="icon"></img></h1>
+            <p id="temp"></p>
+            <p id="wind"></p>
+            <p id="humidity"></p>
+        </section>
+        <section class="foreCast">
+            <h3>5-Day Forecast:</h3>
+            <div id="modal"></div>
+        </section>
+    </main>
 
     <footer>
        <a href="https://github.com/vinitp2" target="_blank">Github</a>
        <a href="https://www.linkedin.com/in/vinit-patell" target="_blank">LinkedIn</a>
     </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
     <script src="./Assets/script.js"></script>
 </body>
 </html>
