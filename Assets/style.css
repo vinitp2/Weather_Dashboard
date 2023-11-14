@@ -3,18 +3,24 @@
     /* color: black; */
 }
 
-header{
+header,footer,a{
+    font-family: sans-serif;
     padding:25px;
     color: white;
     text-align: center;
-    background-color: rgb(77, 77, 223);
+    background-color: rgb(61, 70, 158);
 }
 
-.selectedCity{
+.liveWeather{
     border: 1px solid black;
 }
 
 .searchBtn{
     color: white;
-    background-color: rgb(56, 56, 250);
+    background-color: rgb(105, 145, 227);
+}
+
+.card{
+    background-color: rgb(50, 61, 79);
+    color: white;
 }
