@@ -1,10 +1,12 @@
 var cityInput = document.querySelector(`.cityName`);
+var cityList = document.querySelector(`.cityList`);
 var searchBtn = document.querySelector(`.searchBtn`);
 var icon = document.querySelector(`#icon`);
 var lat, lon;
 var Temp, Wind, Humidity;
 var weatherIcon, weatherIconURL;
 var cityName;
+var cityArr = [];
 
 var TempArr = [];
 var windArr = [];
@@ -27,6 +29,32 @@ for (let i = 0; i < totalDays; i++) {
 }
 console.log(TempArr);
 
+
+searchBtn.addEventListener("click", function(e){
+    // e.preventDefault();
+    if(cityArr.length<=0){ // prevents from resetting local storage
+        cityArr = JSON.parse(localStorage.getItem("cityArr")); 
+    }
+    // console.log(typeof(cityArr));
+    cityArr.push(cityInput.value);
+    localStorage.setItem("cityArr", JSON.stringify(cityArr));
+    for (let j = 0; j < cityArr.length; j++) {
+        let tempBtn = document.createElement('button');
+        tempBtn.textContent = cityArr[j];
+        tempBtn.setAttribute("class","w-100");
+        cityList.append(tempBtn);  
+        // let brEl = document.createElement(`br`);
+        // cityList.append(brEl);
+    }
+
+});
+
+
+
+
+// for (let i = 0; i < cityArr.length; i++) {
+//     localStorage.cityArr[i] = cityArr[i];
+// }
 // let forecastAPI = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=5d4332dab2640be43629e122b795f9f2&cnt=5`;
 
 //function to capture coordinates of the city entered by the user
