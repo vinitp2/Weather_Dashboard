@@ -34,7 +34,7 @@ The users can also select from the city names listed below the search bar as sea
 
 <h3>The following is a quick demo of the software</h3>
 
-<img src = "./Assets/Weather_Dashboard_demo.gif"/>
+<img src = "./Assets/Weather_Dashboard_Demo.gif"/>
 
 ## License
 N/A
