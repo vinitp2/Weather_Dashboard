@@ -47,7 +47,7 @@ searchBtn.addEventListener("click", function(e) {
 const successCallback = (position) => {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
-    let requestURL = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=5d4332dab2640be43629e122b795f9f2`;
+    let requestURL = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=5d4332dab2640be43629e122b795f9f2`;
     fetch(requestURL).then(response => response.json()).then(data => {
         cityName = data[0].name; //fetching the user's city name based on their current coordinates.
         getAPI();
@@ -66,7 +66,7 @@ function getAPI() {
     var cityH1 = document.querySelector(`#cityH1`);
     cityH1.textContent = `${cityName} (${currDate})`;
 
-    let requestURL = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=5d4332dab2640be43629e122b795f9f2`;
+    let requestURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=5d4332dab2640be43629e122b795f9f2`;
     fetch(requestURL).then(response => response.json()).then(data => {
 
         // fetching Longtitude and Latitude from the city name user searched for and to grab it's weather data. 
