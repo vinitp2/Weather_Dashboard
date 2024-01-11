@@ -24,7 +24,7 @@ The user can then manually search for a specific city by typing in the search ba
 The users can also select from the city names listed below the search bar as searched city history. 
 </p>
 
-<h3>The following is the list of APIs that were used in this website:</h3>
+<h3>The following is the list of APIs that were used in this website :</h3>
 
 <ul>
 <li><a href ="https://day.js.org/en/"> Day.js</li>
